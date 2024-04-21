@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+</head>
+<body>
+    <h1>Hello this is the page about us,and the ceo of this company is {{my_name}}</h1>
+    {% for i in about %}
+        {% if i=='Ceo' %}
+            <p><h2>Ceo:Erekle kumelashvili</h2></p>
+        {% elif i=='Company' %}
+            <p><h2>Company:scientists.company</h2></p>
+        {% else %}
+            <p><h2> ჩვენ დავამტკიცეთ რომ:ერთი ხე ტყე არ არის,ორი ხე ტყეა</h2></p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anime</title>
+</head>
+<body>
+    <h1>Hello my name is {{my_name1}} and I am {{my_age}} years old</h1>
+    {% for i in lists %}
+        {% if i=='Death Note' %}
+            <p><h2>პირველი ადგილი</h2></p>
+    <p><h3>anime: {{i}}</h3></p>
+        {% elif i=='One Piece' %}
+            <p><h2>მეორე ადგილი</h2></p>
+    <p><h3>anime: {{i}}</h3></p>
+        {% else %}
+            <p><h2>მესამე ადგილი</h2></p>
+    <p><h3>anime: {{i}}</h3> </p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
